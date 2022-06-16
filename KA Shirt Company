@@ -1,0 +1,24 @@
+Create Table Grishams_TShirts(id Integer, name text, price integer, quantity integer, description text);
+
+Insert into Grishams_TShirts values(1,"Pistol Shirt", 10, 12, "Black and white");
+Insert into Grishams_TShirts values(2, "AR Shirt", 12, 8, "AR on front of shirt");
+Insert into Grishams_TShirts values(3, "50 cal shirt", 15, 10, "50 cal on front");
+Insert into Grishams_TShirts values(4, "Logo T", 10, 50, "Large logo on front");
+Insert into Grishams_TShirts values(5, "Jersey shirt", 25, 0, "Custom name on back");
+Insert into Grishams_TShirts values(6, "Pocket T", 15, 20, "Pocket T");
+Insert into Grishams_TShirts values(7, "Logo plastic bottle", 15, 10, "Plastic Logo water bottle");
+Insert into Grishams_TShirts values(8, "Steel Logo Bottle", 20, 15, "Steel Logo Water Bottle");
+Insert into Grishams_TShirts values(9, "Whiskey stones", 15, 10, "Whiskey Stones");
+Insert into Grishams_TShirts values(10, "Logo Hat", 15, 10, "Logo Hat");
+Insert into Grishams_TShirts values(11, "wrist band", 5, 25, "Wrist band black");
+Insert into Grishams_TShirts values(12, "wrist band", 5, 233, "wrist band white");
+Insert into Grishams_TShirts values(13, "Logo sticker large", 5, 100, "Logo sticker large");
+Insert into Grishams_TShirts values(14, "Logo sticker small", 3, 100, "Logo sticker small");
+Insert into Grishams_TShirts values(15, "Freedom T", 25, 20, "Freedom T");
+
+select * from Grishams_TShirts;
+
+select name, description, price from Grishams_TShirts order by price;
+
+select name, quantity from Grishams_TShirts order by quantity;
+
