@@ -20,22 +20,12 @@ INSERT INTO student_grades (name, number_grade, fraction_completed)
 
 Select name, number_grade, Round(fraction_completed*100) as 'percent_completed' from student_grades;
 
-Select name,
+Select Count(*),
     Case
-        When round(fraction_completed*100) >=90 THEN "A"
-        When round(fraction_completed*100) >=80 Then "B"
-        When round(fraction_completed*100) >=70 Then "C"
+        When number_grade >90 THEN "A"
+        When number_grade >80 Then "B"
+        When number_grade >70 Then "C"
         Else "F"
-    End as "Letter_grade"
-From student_grades;
-
-Select Count(*) as 'Students',
-    Case
-        When round(fraction_completed*100) >=90 THEN "A"
-        When round(fraction_completed*100) >=80 Then "B"
-        When round(fraction_completed*100) >=70 Then "C"
-        Else "F"
-    End as "Letter_grade"
+    End as "letter_grade"
 From student_grades
-Group by "Letter_grade";
-
+Group by "letter_grade";
