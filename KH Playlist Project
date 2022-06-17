@@ -61,3 +61,4 @@ Select title from songs where artist = 'Queen';
 Select name from artists where genre='Pop';
 Select title from songs WHERE artist IN (SELECT name FROM artists WHERE genre ='Pop');
 
+
